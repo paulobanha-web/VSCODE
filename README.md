@@ -20,11 +20,12 @@ Comparative Modeling: Implementation of MLP (Static) vs. LSTM (Sequential) class
 
 📁 Repository Structure
 
-Data cleaning and dimentionality reduction:
+Data Preparation and Preprocessing (utilizes libraries available in PY_LIBRARIES):
 
 \VS_Code\Dataset_VirtualPatientModels_qDateVS_Final.ipynb
 
 \VS_Code\Dataset_VirtualPatientModels_qDateVS_Final_fix.ipynb ( The fix version set the numerical features to specific features)
+
 
 Generation of synthetic data (Phase 1 - Imbalanced) and data quality checks: 
 
