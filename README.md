@@ -1,0 +1,62 @@
+TimeGAN for Longitudinal Tabular Data
+Validating Synthetic Data Utility in Multi-Class Health Prediction
+This repository contains the source code and experimental framework for the Master's Dissertation: "Time-series GAN for Longitudinal Tabular Data: Validating Synthetic Data Utility in Multi-Class Health Prediction."
+
+📌 Overview
+This project addresses the challenge of data scarcity and class imbalance in longitudinal Electronic Health Records (EHR). Using a dataset of only 117 records, we implemented a Time-series Generative Adversarial Network (TimeGAN) to create a high-fidelity synthetic patient population (N=15,904).
+
+The core of this research is the validation of an architectural dependency: proving that sequence-aware models (LSTM) are required to fully leverage the temporal fidelity preserved by TimeGAN, whereas static models (MLP) fail to generalize.
+
+🚀 Key Features
+TimeGAN Implementation: Optimized for longitudinal tabular data using GRU cells.
+
+PCA Dimensionality Reduction: Pre-processing pipeline reducing 55 clinical features to 39 components.
+
+Rejection Sampling: Custom logic to mitigate extreme class imbalance in synthetic generation.
+
+TSTR Framework: A rigorous "Train Synthetic, Test Real" evaluation pipeline.
+
+Comparative Modeling: Implementation of MLP (Static) vs. LSTM (Sequential) classifiers.
+
+📁 Repository Structure
+
+Data cleaning and dimentionality reduction:
+
+\VS_Code\Dataset_VirtualPatientModels_qDateVS_Final.ipynb
+
+\VS_Code\Dataset_VirtualPatientModels_qDateVS_Final_fix.ipynb ( The fix version set the numerical features to specific features)
+
+Generation of synthetic data (Phase 1 - Imbalanced) and data quality checks: 
+
+\VS_Code\Synthetic_timeGAN_Imbalanced_Final_Dis.ipynb
+
+Generation of synthetic data (Phase 2  - Near Balanced) and data quality checks:
+
+\VS_Code\Synthetic_timeGAN_Balanced_Final_Dis.ipynb
+
+M1 MLP Model evaluation on real data (117 records split 70% training 30 % test) 
+
+\VS_Code\MulticlassModel_RealData_Balanced_MLP_Final_Dis.ipynb
+
+M2 MLP Model evaluation "Train Synthetic, Test Real"  (Phase 1 - Imbalanced)
+
+\VS_Code\MulticlassModel_SynthData_ImBal_MLP_Final_Dis.ipynb
+
+M3 MLP Model evaluation "Train Synthetic, Test Real"  (Phase 2  - Near Balanced)
+
+\VS_Code\MulticlassModel_SynthData_Balanced_MLP_Final_Dis.ipynb
+
+M4 LTSM Model evaluation "Train Synthetic, Test Real"  (Phase 2  - Near Balanced)
+
+\VS_Code\MulticlassModel_SynthData_Bal_LSTM_newparams_Dis.ipynb
+
+
+
+🛠️ InstallationBashgit clone https://github.com/paulobanha-web/VSCODE.git
+cd VSCODE
+pip install -r requirements.txt
+
+📝 Citation
+If you use this code or methodology in your research, please cite:
+
+Banha, P. (2025). Time-series GAN for Longitudinal Tabular Data: Validating Synthetic Data Utility in Multi-Class Health Prediction. [IPT Instituto Politécnico de Tomar].
