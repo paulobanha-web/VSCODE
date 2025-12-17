@@ -22,10 +22,8 @@ Comparative Modeling: Implementation of MLP (Static) vs. LSTM (Sequential) class
 📊 Experimental Results
 The models were evaluated on an unseen Real Patient Test Set (T1).
 
-Model,  Architecture,  Training Data,          Macro F1,  Weighted F1
-M1,     MLP,           Real (Scarce),          15.17%,    -
-M3,     MLP,           Synthetic (Balanced),   60.11%,    62.45%
-M4,     LSTM,          Synthetic (Balanced),   74.10%,    74.67%
+<img width="504" height="143" alt="image" src="https://github.com/user-attachments/assets/6ceb1c5e-6c95-4629-911c-e351b5c6f308" />
+
 
 Key Finding: The LSTM (M4) outperformed the MLP (M3) by ~14%, proving the necessity of sequential modeling for TimeGAN-generated data.
 
