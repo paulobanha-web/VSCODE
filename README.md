@@ -99,3 +99,5 @@ PCA & t-SNE projections for structural manifold overlap.
 If you use this code or methodology in your research, please cite:
 
 Banha, P. (2025). Time-series GAN for Longitudinal Tabular Data: Validating Synthetic Data Utility in Multi-Class Health Prediction. [IPT Instituto Politécnico de Tomar].
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
